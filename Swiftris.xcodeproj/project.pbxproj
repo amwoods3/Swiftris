@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		492411A11E64644300F37E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411A01E64644300F37E65 /* AppDelegate.swift */; };
-		492411A31E64644300F37E65 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 492411A21E64644300F37E65 /* GameScene.sks */; };
 		492411A51E64644300F37E65 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 492411A41E64644300F37E65 /* Actions.sks */; };
 		492411A71E64644300F37E65 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411A61E64644300F37E65 /* GameScene.swift */; };
 		492411A91E64644300F37E65 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411A81E64644300F37E65 /* GameViewController.swift */; };
@@ -17,6 +16,19 @@
 		492411B11E64644300F37E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492411AF1E64644300F37E65 /* LaunchScreen.storyboard */; };
 		492411BC1E64644300F37E65 /* SwiftrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411BB1E64644300F37E65 /* SwiftrisTests.swift */; };
 		492411C71E64644300F37E65 /* SwiftrisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411C61E64644300F37E65 /* SwiftrisUITests.swift */; };
+		492411D51E6465BC00F37E65 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 492411D41E6465BC00F37E65 /* Images */; };
+		492411D91E6465EA00F37E65 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 492411D81E6465EA00F37E65 /* Sounds */; };
+		492411DB1E6469EB00F37E65 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411DA1E6469EB00F37E65 /* Array2D.swift */; };
+		492411DD1E646EE900F37E65 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411DC1E646EE900F37E65 /* Block.swift */; };
+		492411DF1E64734600F37E65 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411DE1E64734600F37E65 /* Shape.swift */; };
+		492411E11E647D2E00F37E65 /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411E01E647D2E00F37E65 /* SquareShape.swift */; };
+		492411E31E647F3E00F37E65 /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411E21E647F3E00F37E65 /* TShape.swift */; };
+		492411E51E6482A100F37E65 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411E41E6482A100F37E65 /* LineShape.swift */; };
+		492411E71E64831B00F37E65 /* LShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411E61E64831B00F37E65 /* LShape.swift */; };
+		492411E91E64835100F37E65 /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411E81E64835100F37E65 /* JShape.swift */; };
+		492411EB1E64837C00F37E65 /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411EA1E64837C00F37E65 /* SShape.swift */; };
+		492411ED1E64839800F37E65 /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411EC1E64839800F37E65 /* ZShape.swift */; };
+		492411EF1E64869300F37E65 /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492411EE1E64869300F37E65 /* Swiftris.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +51,6 @@
 /* Begin PBXFileReference section */
 		4924119D1E64644300F37E65 /* Swiftris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		492411A01E64644300F37E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		492411A21E64644300F37E65 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		492411A41E64644300F37E65 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		492411A61E64644300F37E65 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		492411A81E64644300F37E65 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +64,19 @@
 		492411C21E64644300F37E65 /* SwiftrisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftrisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		492411C61E64644300F37E65 /* SwiftrisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftrisUITests.swift; sourceTree = "<group>"; };
 		492411C81E64644300F37E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492411D41E6465BC00F37E65 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		492411D81E6465EA00F37E65 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		492411DA1E6469EB00F37E65 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Array2D.swift; path = ../Array2D.swift; sourceTree = "<group>"; };
+		492411DC1E646EE900F37E65 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		492411DE1E64734600F37E65 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		492411E01E647D2E00F37E65 /* SquareShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareShape.swift; sourceTree = "<group>"; };
+		492411E21E647F3E00F37E65 /* TShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TShape.swift; sourceTree = "<group>"; };
+		492411E41E6482A100F37E65 /* LineShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
+		492411E61E64831B00F37E65 /* LShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LShape.swift; sourceTree = "<group>"; };
+		492411E81E64835100F37E65 /* JShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JShape.swift; sourceTree = "<group>"; };
+		492411EA1E64837C00F37E65 /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
+		492411EC1E64839800F37E65 /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
+		492411EE1E64869300F37E65 /* Swiftris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,14 +128,26 @@
 			isa = PBXGroup;
 			children = (
 				492411A01E64644300F37E65 /* AppDelegate.swift */,
-				492411A21E64644300F37E65 /* GameScene.sks */,
 				492411A41E64644300F37E65 /* Actions.sks */,
 				492411A61E64644300F37E65 /* GameScene.swift */,
 				492411A81E64644300F37E65 /* GameViewController.swift */,
+				492411DA1E6469EB00F37E65 /* Array2D.swift */,
+				492411DC1E646EE900F37E65 /* Block.swift */,
+				492411DE1E64734600F37E65 /* Shape.swift */,
+				492411EE1E64869300F37E65 /* Swiftris.swift */,
+				492411E01E647D2E00F37E65 /* SquareShape.swift */,
+				492411E21E647F3E00F37E65 /* TShape.swift */,
+				492411E41E6482A100F37E65 /* LineShape.swift */,
+				492411E61E64831B00F37E65 /* LShape.swift */,
+				492411E81E64835100F37E65 /* JShape.swift */,
+				492411EA1E64837C00F37E65 /* SShape.swift */,
+				492411EC1E64839800F37E65 /* ZShape.swift */,
 				492411AA1E64644300F37E65 /* Main.storyboard */,
 				492411AD1E64644300F37E65 /* Assets.xcassets */,
 				492411AF1E64644300F37E65 /* LaunchScreen.storyboard */,
 				492411B21E64644300F37E65 /* Info.plist */,
+				492411D81E6465EA00F37E65 /* Sounds */,
+				492411D41E6465BC00F37E65 /* Images */,
 			);
 			path = Swiftris;
 			sourceTree = "<group>";
@@ -241,8 +277,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492411D91E6465EA00F37E65 /* Sounds in Resources */,
+				492411D51E6465BC00F37E65 /* Images in Resources */,
 				492411AC1E64644300F37E65 /* Main.storyboard in Resources */,
-				492411A31E64644300F37E65 /* GameScene.sks in Resources */,
 				492411AE1E64644300F37E65 /* Assets.xcassets in Resources */,
 				492411B11E64644300F37E65 /* LaunchScreen.storyboard in Resources */,
 				492411A51E64644300F37E65 /* Actions.sks in Resources */,
@@ -270,8 +307,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492411E71E64831B00F37E65 /* LShape.swift in Sources */,
+				492411E11E647D2E00F37E65 /* SquareShape.swift in Sources */,
 				492411A71E64644300F37E65 /* GameScene.swift in Sources */,
+				492411E91E64835100F37E65 /* JShape.swift in Sources */,
+				492411EF1E64869300F37E65 /* Swiftris.swift in Sources */,
+				492411DF1E64734600F37E65 /* Shape.swift in Sources */,
+				492411DB1E6469EB00F37E65 /* Array2D.swift in Sources */,
+				492411E51E6482A100F37E65 /* LineShape.swift in Sources */,
+				492411EB1E64837C00F37E65 /* SShape.swift in Sources */,
+				492411E31E647F3E00F37E65 /* TShape.swift in Sources */,
+				492411DD1E646EE900F37E65 /* Block.swift in Sources */,
 				492411A91E64644300F37E65 /* GameViewController.swift in Sources */,
+				492411ED1E64839800F37E65 /* ZShape.swift in Sources */,
 				492411A11E64644300F37E65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
