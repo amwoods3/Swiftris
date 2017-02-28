@@ -11,9 +11,11 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognizerDelegate {
+   
 
     var scene: GameScene!
     var swiftris: Swiftris!
+    var panPointReference:CGPoint?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,11 +39,35 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         
     }
     
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
     @IBAction func didTap(_ sender: UITapGestureRecognizer) {
         swiftris.rotateShape()
+    }
+    
+    @IBAction func didPan(_ sender: Any) {
+        /*
+         If This function is removed, it also needs to be removed from the Storyboard. This function
+         reacts to pan, and will change what happens when the user slides their finger along the screen
+         */
+        let currentPoint = (sender as AnyObject).translation(in: self.view)
+        if let originalPoint = panPointReference {
+            // #3
+            if abs(currentPoint.x - originalPoint.x) > (BlockSize * 0.9) {
+                // #4
+                if (sender as AnyObject).velocity(in: self.view).x > CGFloat(0) {
+                    swiftris.moveShapeRight()
+                    panPointReference = currentPoint
+                } else {
+                    swiftris.moveShapeLeft()
+                    panPointReference = currentPoint
+                }
+            }
+        } else if (sender as AnyObject).state == .began {
+            panPointReference = currentPoint
+        }
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
     func didTick() {
@@ -92,32 +118,5 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     
     func gameShapeDidMove(swiftris: Swiftris) {
         scene.redrawShape(shape: swiftris.fallingShape!) {}
-    }
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
-    
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-    }
-    
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-    
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-    
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-    
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 }

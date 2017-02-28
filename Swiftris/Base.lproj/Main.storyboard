@@ -24,18 +24,21 @@
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="pvq-NM-uBc" appends="YES" id="jT2-iC-hNh"/>
+                            <outletCollection property="gestureRecognizers" destination="hYM-Jf-f5j" appends="YES" id="Rno-II-8Db"/>
                         </connections>
                     </view>
-                    <connections>
-                        <outlet property="didTap" destination="pvq-NM-uBc" id="0OK-4a-hWD"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="pvq-NM-uBc">
                     <connections>
-                        <action selector="didTap:" destination="BV1-FR-VrT" id="Qor-WJ-4LV"/>
+                        <action selector="didTap:" destination="BV1-FR-VrT" id="ZP2-u0-GCm"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="hYM-Jf-f5j">
+                    <connections>
+                        <action selector="didPan:" destination="BV1-FR-VrT" id="hGz-XE-f3W"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
