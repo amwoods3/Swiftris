@@ -45,7 +45,7 @@ class GameScene: SKScene {
         background.anchorPoint = CGPoint(x: 0, y: 1.0)
         
         // add the background to the Scene for display
-        //addChild(background)
+        addChild(background)
         
         // add the gameLayer to the Scene for display
         addChild(gameLayer)
@@ -70,7 +70,7 @@ class GameScene: SKScene {
         gameBoard.position = LayerPosition
         
         shapeLayer.position = LayerPosition
-        //shapeLayer.addChild(gameBoard)
+        shapeLayer.addChild(gameBoard)
         gameLayer.addChild(shapeLayer)
     }
     

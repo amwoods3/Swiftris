@@ -565,6 +565,7 @@
 				492411CD1E64644300F37E65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		492411CE1E64644300F37E65 /* Build configuration list for PBXNativeTarget "SwiftrisTests" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +574,7 @@
 				492411D01E64644300F37E65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		492411D11E64644300F37E65 /* Build configuration list for PBXNativeTarget "SwiftrisUITests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +583,7 @@
 				492411D31E64644300F37E65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
