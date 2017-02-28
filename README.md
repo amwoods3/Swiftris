@@ -1,6 +1,6 @@
 # About
 Swiftris is a tutorial on building iOS applications by walking the user through
-the development of a clone of the renowned puzzle game known as Tetris. The Swiftris site can be found on their [website](bloc.io).
+the development of a clone of the renowned puzzle game known as Tetris. The Swiftris site can be found on their [website](https://www.bloc.io).
 
 # Swift 2/3 
 It should be noted that the guide is for Swift 2 and as such does not convert
